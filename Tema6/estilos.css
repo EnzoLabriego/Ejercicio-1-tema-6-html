@@ -1,0 +1,26 @@
+/* Estilos para el botón */
+.boton {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos para el pseudo-elemento */
+.boton::after {
+  content: "Pasa por encima";
+}
+
+/* Estilos para la pseudo-clase hover */
+.boton:hover {
+  background-color: green;
+  color: white;
+}
+
+/* Estilos para el pseudo-elemento al pasar el ratón por encima */
+.boton:hover::after {
+  content: "¡Hecho!";
+}
